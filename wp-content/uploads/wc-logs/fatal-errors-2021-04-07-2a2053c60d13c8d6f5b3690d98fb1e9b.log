@@ -1,0 +1,18 @@
+2021-04-07T14:42:59+00:00 CRITICAL Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\AppsDownloading\wp-admin\includes\class-wp-filesystem-direct.php:66
+Stack trace:
+#0 C:\xampp\htdocs\AppsDownloading\wp-admin\includes\class-wp-filesystem-direct.php(66): fopen('', 'wb')
+#1 C:\xampp\htdocs\AppsDownloading\wp-content\plugins\astra-sites\inc\classes\class-astra-sites-importer-log.php(255): WP_Filesystem_Direct->put_contents(NULL, '\r\nComplete ', 438)
+#2 C:\xampp\htdocs\AppsDownloading\wp-content\plugins\astra-sites\inc\classes\class-astra-sites-importer.php(637): Astra_Sites_Importer_Log::add('Complete ')
+#3 C:\xampp\htdocs\AppsDownloading\wp-includes\class-wp-hook.php(292): Astra_Sites_Importer->after_batch_complete('')
+#4 C:\xampp\htdocs\AppsDownloading\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\AppsDownloading\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\AppsDownloading\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-wp-background-process-astra.php(64): do_action('astra_sites_ima...')
+#7 C:\xampp\htdocs\AppsDownloading\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(329): WP_Background_Process_Astra->complete()
+#8 C:\xampp\htdocs\AppsDownloading\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(447): WP_Background_Process->handle()
+#9 C:\xampp\htdocs\AppsDownloading\wp-includes\class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#10 C:\xampp\htdocs\AppsDownloading\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#11 C:\xampp\htdocs\AppsDownloading\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#12 C:\xampp\htdocs\AppsDownloading\wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#13 {main}
+  thrown in C:\xampp\htdocs\AppsDownloading\wp-admin\includes\class-wp-filesystem-direct.php on line 66
+
