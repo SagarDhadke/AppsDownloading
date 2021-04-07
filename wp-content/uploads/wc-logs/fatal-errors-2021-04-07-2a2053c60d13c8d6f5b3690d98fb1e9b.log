@@ -16,3 +16,5 @@ Stack trace:
 #13 {main}
   thrown in C:\xampp\htdocs\AppsDownloading\wp-admin\includes\class-wp-filesystem-direct.php on line 66
 
+2021-04-07T15:21:48+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\AppsDownloading\wp-includes\Requests\Transport\cURL.php on line 463
+
